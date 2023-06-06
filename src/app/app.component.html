@@ -1,0 +1,13 @@
+<main>
+  <div class="container">
+    <h1>Listado de paises</h1>
+
+    <select name="country-select" id="">
+      <option *ngFor="let country of countries" [value]="country.id">
+        {{ country.name.common }}
+      </option>
+    </select>
+
+    <button (click)="callEgame()">Call egame</button>
+  </div>
+</main>
